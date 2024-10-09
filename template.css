@@ -249,4 +249,42 @@ li {
     .footer-icon {
         font-size: 24px; 
     }
+
+    /* Form Styles */
+    input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    }
+
+    input[type="submit"] {
+    background-color: #124532;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+    background-color: #1D664A;
+    }
+
+    .name-link {
+        font-size: 24px;
+        color: inherit;
+        transition: font-size 0.6s ease;
+    }
+
+    .name-link:hover {
+        font-size: 28px;
+        color: inherit;
+    }
 }

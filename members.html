@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Members</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="template.css"> 
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <script>
@@ -16,18 +18,23 @@
                 .catch(error => console.log('Error loading template:', error));
         });
         window.addEventListener('scroll', function() {
-        const footer = document.querySelector('.footer');
-        const scrollPosition = window.scrollY + window.innerHeight;
-        const documentHeight = document.documentElement.scrollHeight;
+            const footer = document.querySelector('.footer');
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
 
-        if (scrollPosition >= documentHeight) {
-            footer.style.bottom = '0'; // Show the footer
-        } else {
-            footer.style.bottom = '-100px'; // Hide the footer
-        }
-    });
+            if (scrollPosition >= documentHeight) {
+                footer.style.bottom = '0';
+            } else {
+                footer.style.bottom = '-100px';
+            }
+        });
     </script>
     <style>
+        /* Apply Montserrat font to the entire page */
+        body, th, td, p {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         table {
             width: 100%;
             border-collapse: separate;
@@ -47,32 +54,45 @@
     <div class="container">
        <table>
         <tr>
-            <th>NAME</th>
+            <th>
+                <a href="linkedin.com/in/loganladams" class="name-link" style="text-decoration: none;">Logan Adams</a>
+            </th>
+        </tr>
+        <tr>
+            <td><img src="images/logan_head.jpeg" style="width: 150px; height: auto;"></td>
+            <td>
+                <strong style="font-size: 20px;">President</strong>
+                <br><br>
+                <ul>
+                    <li>Management and delegation of tasks</li>
+                    <li>Representative in meetings and external affairs</li>
+                    <li>Membership engagement and retainment efforts</li>
+                    <li>Event organization and point of contact</li>
+                    <li>Organization of schedules and logistics</li>
+                    <li>Formation of strategy and direction for the club</li>
+                </ul>
+            </td>
+        </tr>
+        
+            <th>Lucas Havlin</th>
         </tr>
         <tr>
             <td><img src="images/default_contact_photo.png"> </td>
-            <td><strong>Role: President of Something</strong><br><br>ipsum, dolor sit amet consectetur adipisicing elit. Delectus rem nulla ea pariatur distinctio qui modi, repudiandae atque! Harum laborum tenetur dicta architecto vero facere labore maiores, nemo amet dolores.</td>
+            <td><strong>VP of Operations</strong><br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus rem nulla ea pariatur distinctio qui modi, repudiandae atque! Harum laborum tenetur dicta architecto vero facere labore maiores, nemo amet dolores.</td>
         </tr>
         <tr>
-            <th>NAME</th>
-        </tr>
-        <tr>
-            <td><img src="images/default_contact_photo.png"> </td>
-            <td><strong>Role: President of Something</strong><br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus rem nulla ea pariatur distinctio qui modi, repudiandae atque! Harum laborum tenetur dicta architecto vero facere labore maiores, nemo amet dolores.</td>
-        </tr>
-        <tr>
-            <th>NAME</th>
+            <th>Holden Maier</th>
         </tr>
         <tr>
             <td><img src="images/default_contact_photo.png"> </td>
-            <td><strong>Role: President of Something</strong><br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus rem nulla ea pariatur distinctio qui modi, repudiandae atque! Harum laborum tenetur dicta architecto vero facere labore maiores, nemo amet dolores.</td>
+            <td><strong>VP of Communications</strong><br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus rem nulla ea pariatur distinctio qui modi, repudiandae atque! Harum laborum tenetur dicta architecto vero facere labore maiores, nemo amet dolores.</td>
         </tr>
         <tr>
-            <th>NAME</th>
+            <th>Alexander Levine</th>
         </tr>
         <tr>
             <td><img src="images/default_contact_photo.png"> </td>
-            <td><strong>Role: President of Something</strong><br><br>ipsum, dolor sit amet consectetur adipisicing elit. Delectus rem nulla ea pariatur distinctio qui modi, repudiandae atque! Harum laborum tenetur dicta architecto vero facere labore maiores, nemo amet dolores.</td>
+            <td><strong>VP of Finance</strong><br><br>ipsum, dolor sit amet consectetur adipisicing elit. Delectus rem nulla ea pariatur distinctio qui modi, repudiandae atque! Harum laborum tenetur dicta architecto vero facere labore maiores, nemo amet dolores.</td>
         </tr>
        </table> 
 
